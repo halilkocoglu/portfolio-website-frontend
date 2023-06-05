@@ -16,9 +16,26 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
+  color: #fff;
+
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 0% 50%, rgba(19, 20, 80, 1) 0%, rgba(14, 43, 117, 0.91) 49%, rgba(48, 127, 190, 0.91) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 0% 50%, rgba(19, 20, 80, 1) 0%, rgba(14, 43, 117, 0.91) 49%, rgba(48, 127, 190, 0.91) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 0% 50%, rgba(19, 20, 80, 1) 0%, rgba(14, 43, 117, 0.91) 49%, rgba(48, 127, 190, 0.91) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 0% 50%, rgba(19, 20, 80, 1) 0%, rgba(14, 43, 117, 0.91) 49%, rgba(48, 127, 190, 0.91) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 0% 50%, rgba(19, 20, 80, 1) 0%, rgba(14, 43, 117, 0.91) 49%, rgba(48, 127, 190, 0.91) 100%);
+
 }
 

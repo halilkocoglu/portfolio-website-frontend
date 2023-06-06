@@ -1,17 +1,26 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: 'Signika Negative', sans-serif;
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.8;
   font-weight: 400;
+  font-size: x-large;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--COLOR) ;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  /* VARIABLES */
+  --BG_COLOR: #fff;
+  --BG_HOVER: #333;
+  --COLOR:rgba(255, 255, 255, 0.87);
+  --COLOR_DARK: #444;
+  
 }
 
 body {
@@ -19,8 +28,6 @@ body {
   padding: 0;
   display: flex;
   min-height: 100vh;
-  color: #fff;
-
 
     /* ff 3.6+ */
     background:-moz-radial-gradient(circle at 0% 50%, rgba(19, 20, 80, 1) 0%, rgba(14, 43, 117, 0.91) 49%, rgba(48, 127, 190, 0.91) 100%);

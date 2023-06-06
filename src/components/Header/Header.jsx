@@ -1,17 +1,19 @@
+import { useScrollContext } from "../../Contexts/scrollContext";
 import "./header.css";
 
 function Header() {
+  const {scrollToSection} = useScrollContext()
   return (
     <div className="header-container">
         <ul className="navbar">
           <li>
-            <a href="#about">About</a>
+            <button onClick={() => scrollToSection('about')}className="about" >About</button>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+            <button  onClick={() => scrollToSection('projects')} className="projects">Projects</button>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <button  onClick={() => scrollToSection('contacts')} className="contacts">Contact</button>
           </li>
         </ul>
     </div>

@@ -1,0 +1,21 @@
+.footer-container {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--BG_HOVER);
+    margin-top: 2rem;
+}
+
+
+.footer-container a {
+    color: var(--COLOR);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.footer-container a:hover {
+    color: coral;
+}

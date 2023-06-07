@@ -2,10 +2,14 @@ import "./footer.css";
 
 function Footer() {
   return (
-    <div>
-        <h1>Footer</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim vitae accusamus soluta pariatur labore nam voluptates, hic, iure inventore quos vel excepturi voluptatibus. Architecto libero modi iure, alias repellat voluptate.</p>
-        
+    <div className="footer-container">
+      <div>
+        Copyright &copy; 2023   
+      </div>
+      <div>
+        Made by
+         <a href="https://github.com/halilkocoglu" rel="noreferrer" target="_blank"> Halil Koçoğlu</a>
+      </div>
     </div>
   )
 }

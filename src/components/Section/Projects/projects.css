@@ -1,8 +1,8 @@
-section { 
+section {
     display: flex;
     flex-direction: column;
     width: 80%;
-    
+
 }
 
 .card-body {
@@ -15,8 +15,9 @@ section {
     border-radius: 0.3rem;
     margin-bottom: 5rem;
 }
+
 img {
-    width:auto ;
+    width: auto;
     height: 200px;
     border-radius: 5px;
     transition-duration: 0.5s;
@@ -28,30 +29,48 @@ img {
     border-radius: 5px;
     background-color: #9999;
 }
+
 .title h3 {
     text-align: center;
 }
 
-.card-buttons {
+.card-buttons button {
+    font-size: x-large;
+    padding: 0.4rem 0.3rem 0.2rem 0.3rem;
+    transition-duration: 0.5s;
+    transition-delay: 20ms;
+    transition-timing-function: ease-in-out;
 }
+.link {
+    display: none;
+    transition: color 0.5 ease-in-out;
+}
+.link a:hover{
+    color: coral;
+}
+
+.btn:hover , .btn:focus  {
+    transform: rotate(360deg);
+}
+
 .card-buttons a {
+    padding: 0.3rem;
     text-decoration: none;
-    padding: 0.2rem;
     color: var(--COLOR);
-    background-color: var(--COLOR_DARK);
 }
 
 .right-img:hover {
-    transform: scale(1.4)  translateX(-100px);
+    transform: scale(1.4) translateX(-100px);
 }
 
 .left-img:hover {
-    transform: scale(1.4)  translateX(100px);
+    transform: scale(1.4) translateX(100px);
 }
 
 .right {
     text-align: right;
 }
+
 .left {
     text-align: left;
 }
@@ -59,3 +78,14 @@ img {
 .d-none {
     display: none;
 }
+
+.d-block {
+    display: inline;
+    animation-name: MOver;
+    animation-duration: 0.5s;
+}
+
+@keyframes MOver { 
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

@@ -52,9 +52,7 @@ function Projects() {
                       </a>
                     </button >
                       <span className={`link ${item.id===hoveredID&&isHovered&& "d-block"}`}> 
-                        <a>
                           Visit GitHub...
-                        </a>
                       </span>
                   </div>
                 </div>

@@ -58,6 +58,9 @@ img {
     text-decoration: none;
     color: var(--COLOR);
 }
+.card-buttons span {
+    padding-left: 1em;
+}
 
 .right-img:hover {
     transform: scale(1.4) translateX(-100px);

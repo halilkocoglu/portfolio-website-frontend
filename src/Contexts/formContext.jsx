@@ -11,10 +11,10 @@ const FormProvider = ({children}) => {
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    console.log("firstname", firstname);
-    console.log("lastname", lastname);
-    console.log("email", email);
-    console.log("message", message);
+    // console.log("firstname", firstname);
+    // console.log("lastname", lastname);
+    // console.log("email", email);
+    // console.log("message", message);
 
 
 

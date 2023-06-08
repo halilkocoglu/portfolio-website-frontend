@@ -84,4 +84,7 @@
     .user-name {
         gap: 0;
     }
+    .form-body input {
+        width: 200px;
+    }
 }

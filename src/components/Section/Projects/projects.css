@@ -89,6 +89,7 @@ img {
     transform: scale(1.2) translateX(20px);
     }
     img {
+        width: 200px;
         height: 150px;
     }
 }

@@ -1,8 +1,50 @@
 
-h1 {
-    margin-left: 2rem;
-}
+
 
 .intended {
     margin-left: 2rem;
+}
+
+.cv {
+    text-align: center;
+}
+
+.cv button {
+    background-color: var(--COLOR);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+
+.cv a {
+    color: var(--COLOR_DARK);
+    font-size: large;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cv button:hover ,
+.cv button:focus {
+    background-color: coral;
+    /* transform: scale(1.2); */
+    animation: shake 0.7s ease;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px) rotate(5deg); }
+    50% { transform: translateX(-3px) rotate(-3deg); }
+    75% { transform: translateX(1px) rotate(1deg); }
+    100% { transform: translateX(0); }
+  }
+
+@media screen and (max-width: 576px) {
+    .cv {
+        text-align: center;
+    }
+    .cv a {
+        font-size: medium;
+    }
 }

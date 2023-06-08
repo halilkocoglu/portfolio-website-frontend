@@ -1,6 +1,7 @@
 import './about.css';
 import { useScrollContext } from '../../../Contexts/scrollContext';
 import  {MdDownload}  from 'react-icons/md';
+import Cv from "../../../assets/Cv.pdf"
 
 function About() {
   const {sectionRefs} = useScrollContext()
@@ -26,7 +27,7 @@ function About() {
         </div>
         <div className='cv'>
           <button>
-          <a href="" download>CV <MdDownload /></a>
+          <a href={Cv} download>CV <MdDownload /></a>
           </button>
         </div>
       </div>

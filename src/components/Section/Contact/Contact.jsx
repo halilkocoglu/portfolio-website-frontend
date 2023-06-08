@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useScrollContext } from '../../../Contexts/scrollContext';
+import validationSchema from "./validation"
 import './contact.css';
 
 function Contact() {
   const {sectionRefs} = useScrollContext()
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [errMessage, setErrMessage] = useState("")
+  const [yupErr, setYupErr] = useState("")
   const [formData, setFormData] = useState({
     firstname: '',
     lastname:'',
@@ -20,32 +22,42 @@ function Contact() {
   const handleSubmit =  async (event) => {
     event.preventDefault();
     setErrMessage("")
-    await fetch("https://portfolio-backendserver.herokuapp.com/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      setErrMessage("Message sent successfully")
-      console.log("İstek yanıtı:", data);
-      // İstek başarılıysa başarı mesajı gösterin veya diğer işlemleri yapın
-    })
-    .catch((error) => {
-      setErrMessage(`Something wents wrong: ${error.message}`)
-      console.log("İstek hatası:", error.message);
-      // İstek başarısızsa hata mesajı gösterin veya diğer işlemleri yapın
-    });
+    
+    await validateForm()
     
     setIsSubmitted(true)
+    setYupErr("")
     setFormData({
       firstname: '',
       lastname:'',
       email: '',
       message: '',
     })
+  };
+
+  const validateForm = () => {
+    validationSchema.validate(formData)
+      .then(async () => {
+        await fetch("https://portfolio-backendserver.herokuapp.com/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          setErrMessage("Message sent successfully")
+          // console.log("Response:", data);
+        })
+        .catch((error) => {
+          setErrMessage(`Something wents wrong: ${error.message}`)
+          // console.log("Response Error:", error.message);
+        });
+      })
+      .catch(errors => {
+        setYupErr(errors.message);
+      });
   };
 
   useEffect(() => {
@@ -105,6 +117,9 @@ function Contact() {
               <div className='message'>
                 <div>
                   <h5>Message</h5>
+                </div>
+                <div className={`response-message ${!isSubmitted&&"d-none"}`}>
+                  {yupErr}
                 </div>
                 <div className={`response-message ${!isSubmitted&&"d-none"}`}>
                   {errMessage}

@@ -54,7 +54,7 @@ img {
 .card-buttons a {
     padding: 0.3rem;
     text-decoration: none;
-    color: var(--COLOR_DARK);
+    color: var(--COLOR);
 }
 .card-buttons span {
     padding-right: 1em;

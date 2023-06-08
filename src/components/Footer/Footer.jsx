@@ -5,10 +5,6 @@ function Footer() {
     <div className="footer-container">
       <div className="com">
         <div>
-          <span>Phone : </span> 
-          <span>+90 533 947 52 17</span>
-        </div>
-        <div>
           <span>Email : </span> 
           <span>halilkocoglu98@gmail.com</span>
         </div>

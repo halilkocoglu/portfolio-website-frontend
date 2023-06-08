@@ -1,5 +1,5 @@
 
-import { AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useScrollContext } from "../../../Contexts/scrollContext";
 import data from "../../../JSON/projects.json"
 import "./projects.css";
@@ -31,33 +31,29 @@ function Projects() {
             return (
               <div className="project-card" key={item.id}>
                 <div className="card-body">
-                  <div className={item.id % 2 === 0 ? "" : "d-none"}>
-                    <img className="left-img" src={item.img} alt={item.id} />
-                  </div>
-                <div className="card-info">
+                
                   <div className="title">
-                    <h3 className={item.id % 2 === 0 ? "right" : "left" }>{item.name}</h3>
+                    <h3>{item.name}</h3>
+                  </div>
+                  <div >
+                    <img className="right-img" src={item.img} alt={item.id} />
                   </div>
                   <div>
                     {item.description}
                   </div>
                   <div className="card-buttons">
+                    <span className={`link ${item.id===hoveredID&&isHovered&& "d-block"}`}> 
+                        Visit GitHub...
+                    </span>
                     <button 
                     className='btn' 
                     onMouseOver={() =>mouseOverHandle(item.id) }
                     onMouseLeave={mouseOutHandle}
                     >
                       <a href={item.link} target="_blank" rel="noreferrer" >
-                      <AiOutlineArrowRight />
+                      <AiOutlineArrowLeft />
                       </a>
                     </button >
-                      <span className={`link ${item.id===hoveredID&&isHovered&& "d-block"}`}> 
-                          Visit GitHub...
-                      </span>
-                  </div>
-                </div>
-                  <div className={item.id % 2 === 0 ? "d-none" : ""}>
-                    <img className="right-img" src={item.img} alt={item.id} />
                   </div>
                 </div>
               </div>

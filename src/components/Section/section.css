@@ -4,3 +4,13 @@
     align-items: center;
     gap: 2.5rem;
 }
+
+h1 {
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .section-container {
+        gap: 1.5rem;
+    }
+}

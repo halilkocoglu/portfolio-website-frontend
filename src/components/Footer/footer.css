@@ -1,4 +1,6 @@
 .footer-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     position: relative;
     justify-content: center;
@@ -9,8 +11,7 @@
 }
 .com {
     width: 70%;
-    display: inline-flex;
-    flex-direction: row;
+    display: block;
     justify-content: space-around; 
     margin: 1rem;   
 }
@@ -24,4 +25,10 @@
 
 .footer-container a:hover {
     color: coral;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+        margin-top: 1rem;
+    }
 }

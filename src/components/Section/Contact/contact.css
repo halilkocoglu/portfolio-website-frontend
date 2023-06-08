@@ -36,10 +36,10 @@
 .message textarea {
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     text-align: start;
     width: 100%;
-    height: 300px;
+    height: 270px;
 }
 
 .submit-btn {
@@ -67,4 +67,21 @@
     padding: 0 2rem ;
     margin: 1rem;
     border-radius: 5px;
+}
+@media screen and (max-width: 960px) {
+    .message textarea {
+        height: 200px;
+    }
+    .user-name {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .message textarea {
+        height: 150px;
+    }
+    .user-name {
+        gap: 0;
+    }
 }

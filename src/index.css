@@ -47,3 +47,10 @@ body {
 
 }
 
+
+@media screen and (max-width: 1400px) {
+  :root {
+      line-height: 1.5;
+      font-size: large;
+  }
+}

@@ -20,7 +20,7 @@ function Contact() {
   const handleSubmit =  async (event) => {
     event.preventDefault();
     setErrMessage("")
-    await fetch("http://localhost:5000/", {
+    await fetch("https://portfolio-backendserver.herokuapp.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

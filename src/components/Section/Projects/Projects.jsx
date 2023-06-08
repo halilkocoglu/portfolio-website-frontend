@@ -36,7 +36,7 @@ function Projects() {
                     <h3>{item.name}</h3>
                   </div>
                   <div >
-                    <img className="right-img" src={item.img} alt={item.id} />
+                    <img className="right-img" src={`${item.img}`} alt={item.id} />
                   </div>
                   <div>
                     {item.description}

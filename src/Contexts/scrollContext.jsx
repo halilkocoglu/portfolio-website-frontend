@@ -4,6 +4,7 @@ import { createContext, useContext, useRef } from "react";
 const ScrollContext = createContext()
 
 const ScrollProvider = ({children}) => {
+        // Instead of create a new Context, i use in here for form mesage
 
         const sectionRefs = {
           about: useRef(null),

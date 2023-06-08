@@ -60,3 +60,11 @@
     transform: scale(1.3) translateX(-10px) ;
     filter: brightness(150%);
 }
+
+.response-message {
+    background-color: var(--BG_HOVER);
+    text-align: center;
+    padding: 0 2rem ;
+    margin: 1rem;
+    border-radius: 5px;
+}

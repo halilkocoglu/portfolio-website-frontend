@@ -4,16 +4,13 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 import { ScrollProvider } from './Contexts/scrollContext.jsx'
-import { FormProvider } from './Contexts/formContext.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.Fragment>
     <BrowserRouter>
       <ScrollProvider>
-        <FormProvider>
           <App />
-        </FormProvider>
       </ScrollProvider>
     </BrowserRouter>
   </React.Fragment>,

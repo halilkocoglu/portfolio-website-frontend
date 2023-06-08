@@ -5,7 +5,7 @@
         "description": "Basic university website with MERN and CRUD operations. Mongo db for database, EJS for template engine. This web site includes 3 role (Student, Teacher, Admin). Courses can be created (by teacher and admin). Categories, Courses and Users can be modify by admin. Students can add lessons to their dashboard",
         "deps":"Express, Mongoose, Mongo DB, EJS, Slugify, Bcrypt, Dotenv, Express-session, Express-validator, Connect-flash, Connect-mongo, Method-override, Nodemailer, Nodemon(as Dev)",
         "link": "https://github.com/halilkocoglu/smart-edu-project.git",
-        "img": "/src/assets/smart-edu.png"
+        "img": "/public/smart-edu.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "Basic weather web application with context api and axios.",
         "deps":"Axios",
         "link": "https://github.com/halilkocoglu/responsive-weather-app.git",
-        "img": "/src/assets/weather-app.png"
+        "img": "/public/weather-app.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "description": "An E-Commerce website, including login and (fake) registration, without ordering.",
         "deps":"Axios, React Router, Formik, YUP, React ICONS",
         "link": "https://github.com/halilkocoglu/responsive-e-commerce-website.git",
-        "img": "/src/assets/e-comm.png"
+        "img": "/public/e-comm.png"
     },
     {
         "id": 4,
@@ -29,6 +29,6 @@
         "description": "A blog website trial (ready for  heroku)",
         "deps":"Express, Mongoose, Mongo DB, EJS",
         "link": "https://github.com/halilkocoglu/blog-website-trial.git",
-        "img": "/src/assets/blog.png"
+        "img": "/public/blog.png"
     }
 ]

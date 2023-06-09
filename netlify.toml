@@ -1,14 +1,10 @@
-
-[context.deploy-preview]
-  publish = "dist/"
-
-[[redirects]]
-  from = "/old-path"
-  to = "/new-path"
-
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+[context.deploy-preview]
+  publish = "dist/"
+
 
 

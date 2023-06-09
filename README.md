@@ -5,7 +5,7 @@ You can download my cv and see my projects in the website
 
 [Netlify](https://kocoglu-portfolio.netlify.app)
 
-##Dependencies 
+## Dependencies 
 - React icons
 - react spring
 - yup
